@@ -21,8 +21,15 @@ namespace Commando
         }
         public void Shoot()
         {
-            bullets--;
-            Console.WriteLine("Shoot!");
+            if (bullets > 0)
+            {
+                bullets--;
+                Console.WriteLine("Shoot!");
+            }
+            else
+            {
+                Console.WriteLine("Cant");
+            }
         }
 
     }
