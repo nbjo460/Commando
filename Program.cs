@@ -14,10 +14,7 @@ namespace Commando
             Commando com = new Commando("Menachem", "Colonel", new string[]{"Patish", "Izmel", "chevel", "bag", "meimiya"});
             Weapon wep = new Weapon("f16", "idf", 40);
 
-            wep.Shoot();
-            com.Attack();
-            com.Hide();
-            com.Walk();
+
         }
     }
 }

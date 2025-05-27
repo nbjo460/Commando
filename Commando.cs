@@ -8,10 +8,10 @@ namespace Commando
 {
     public class Commando
     {
-        public string name;
-        public string codeName;
-        public string[] tools = new string[5];
-        public string status;
+        private string name;
+        public string codeName { get; set; }
+        private string[] tools = new string[5];
+        private string status;
 
         public Commando(string _name, string _codeName, string[] _tools)
         {
@@ -22,17 +22,34 @@ namespace Commando
         }
         public void Walk()
         {
-            Console.WriteLine("Walkilng");
+            status = "walk";
+            Console.WriteLine(status);
         }
         public void Hide()
         {
             status = "hide";
-            Console.WriteLine("Status Changed to Hide");
+            Console.WriteLine(status);
         }
         public void Attack()
         {
             Console.WriteLine("Code x is attacking");
         }
+        public string SayName(string commanderRank) 
+        {
+            if(commanderRank == "GENERAL")
+            {
+                return name;
+            }
+            else if(commanderRank == "COLONEL")
+            {
+                return codeName;
+            }
+            else
+            {
+                return "classified";
+            }
+        }
+         
 
     }
 }
