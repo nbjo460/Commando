@@ -6,7 +6,17 @@ using System.Threading.Tasks;
 
 namespace Commando
 {
-    internal class SeaCommando
+    public class SeaCommando : Commando
     {
+        public SeaCommando(string _name, string _codeName, string[] _tools) : base(_name, _codeName, _tools)
+        {
+        }
+        public void Swim()
+        {
+            Console.WriteLine("Swim");
+        }
+        public override void Attack() {
+            Console.WriteLine("SeaCommando attacking");
+        }
     }
 }

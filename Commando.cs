@@ -30,7 +30,7 @@ namespace Commando
             status = "hide";
             Console.WriteLine(status);
         }
-        public void Attack()
+        public virtual void Attack()
         {
             Console.WriteLine("Code x is attacking");
         }

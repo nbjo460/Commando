@@ -15,5 +15,9 @@ namespace Commando
         {
             Console.WriteLine("parachuting");
         }
+        public override void Attack()
+        {
+            Console.WriteLine("AirCommando attacking");
+        }
     }
 }
